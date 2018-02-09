@@ -1,0 +1,27 @@
+{
+  "name": "microservice-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint --ignore-path .gitignore .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run pretest && node server.js",
+    "mocks": "npm run pretest && node server.js -m"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "eslint-config-demo-main": "^1.0.6",
+    "express": "^4.16.2",
+    "mockery": "^2.1.0",
+    "splunk-logging": "^0.9.3",
+    "swagger-ui-express": "^2.0.15",
+    "winston": "^2.4.0",
+    "winston-splunk-httplogger": "^1.2.2",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {}
+}
